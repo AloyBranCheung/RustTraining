@@ -262,7 +262,7 @@ cargo build --release
 # debug = true          # Add this temporarily for profiling
 
 # Step 2: Record with perf
-perf record -g --call-graph=dwarf ./target/release/diag_tool --run-diagnostics
+perf record --call-graph=dwarf ./target/release/diag_tool --run-diagnostics
 
 # Step 3: Generate a flamegraph
 # Install: cargo install flamegraph
